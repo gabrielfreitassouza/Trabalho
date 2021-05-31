@@ -7,20 +7,20 @@ void corTexto (int cor);
 void calcularFatorial();
 //FUNÇÕES
 void main(){ //MENU
+    system("clear");
     setlocale (LC_ALL, "pt_BR.UTF-8");
     int opcao = 0;
     do{
-        printf("===================== MENU ========================\n");
+        printf(BLUB "===================== MENU ========================\n");
         printf("    1 - Fatorial de um número                      \n");
         printf("    2 - Números pares/impares                      \n");
         printf("    3 - Maior número de um conjunto                \n");
         printf("    4 - Mais velho/novo                            \n");
         printf("    5 - Soma PA                                    \n");
         printf("    0 - Sair                                       \n");
-        printf(RED "===================================================\n");
-        printf("Hello world\e[0;37m"); 
-        printf("--> ");
-        scanf("%i", &opcao);
+        printf( "===================================================\n");
+        printf(reset "--> ");
+        scanf("%i", &opcao); 
         system("clear");
         switch(opcao){
             case 0:
