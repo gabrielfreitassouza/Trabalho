@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include "ANSI-color-codes.h"
+#include "ANSI-color-codes.h" // https://gist.github.com/RabaDabaDoba/145049536f815903c79944599c6f952a
+char c;
 //PROTOTYPE
-void corTexto (int cor);
+void espera(){
+      printf("Precione qualquer tecla para continuar...", getchar());
+      getchar();
+}
 void calcularFatorial();
 //FUNÇÕES
 void main(){ //MENU
@@ -11,15 +15,15 @@ void main(){ //MENU
     setlocale (LC_ALL, "pt_BR.UTF-8");
     int opcao = 0;
     do{
-        printf(BLUB "===================== MENU ========================\n");
+        printf(BLU "===================== MENU ========================\n");
         printf("    1 - Fatorial de um número                      \n");
         printf("    2 - Números pares/impares                      \n");
         printf("    3 - Maior número de um conjunto                \n");
         printf("    4 - Mais velho/novo                            \n");
         printf("    5 - Soma PA                                    \n");
         printf("    0 - Sair                                       \n");
-        printf( "===================================================\n");
-        printf(reset "--> ");
+        printf( "===================================================\n" reset);
+        printf( "--> " );
         scanf("%i", &opcao); 
         system("clear");
         switch(opcao){
@@ -27,7 +31,7 @@ void main(){ //MENU
                 break;
             case 1:
                 calcularFatorial();
-                getchar();
+                espera();
                 system("clear");
                 break;
             case 2:
@@ -44,8 +48,7 @@ void main(){ //MENU
                 break;
             default:
                 printf("Opçao(%i) Inválida !! \n",opcao);
-                getchar();
-                system("clear");
+                system("PAUSE");
                 break;
         };
     }while(opcao != 0);
