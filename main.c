@@ -15,15 +15,16 @@ int main(){ //MENU
     int opcao = 0;
     do{
         system("clear");
+        color(BHRED);
+        printf("\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\tMENU\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\n");
         color(BHBLU);
-        printf("===================== MENU ========================\n");
-        printf("    1 - Fatorial de um número                      \n");
-        printf("    2 - Números pares/impares                      \n");
-        printf("    3 - Maior número de um conjunto                \n");
-        printf("    4 - Mais velho/novo                            \n");
-        printf("    5 - Soma PA                                    \n");
-        printf("    0 - Sair                                       \n");
-        printf( "===================================================\n" reset);
+        printf("    \U0001F7E61 -> Fatorial de um número                      \n");
+        printf("    \U0001F7E62 -> Números pares/impares                      \n");
+        printf("    \U0001F7E63 -> Maior número de um conjunto                \n");
+        printf("    \U0001F7E64 -> Mais velho/novo                            \n");
+        printf("    \U0001F7E65 -> Soma PA                                    \n");
+        printf("    \U0001F7E60 -> Sair                                       \n");
+        printf( "\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\U0001F53B\U0001F53A\n");
         printf(BHGRN "--> " );
         scanf("%i", &opcao); 
         system("clear");
