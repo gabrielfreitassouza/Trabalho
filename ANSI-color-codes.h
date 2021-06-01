@@ -76,3 +76,8 @@
 
 //Reset
 #define reset "\e[0m"
+
+//Trocar cor
+void color(char color[8]){
+     printf(color);
+}
