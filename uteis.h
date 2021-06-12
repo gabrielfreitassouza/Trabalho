@@ -1,9 +1,4 @@
-/*
- * This is free and unencumbered software released into the public domain.
- *
- * For more information, please refer to <https://unlicense.org>
- */
-
+int defaultNumber = 0 ;
 //Regular text
 #define BLK "\e[0;30m"
 #define RED "\e[0;31m"
@@ -81,3 +76,20 @@
 void color(char color[8]){
      printf(color);
 }
+void espera(){
+      color(HRED);
+      printf("Precione ENTER para continuar...",getchar());
+      getchar();
+}
+void println(char *texto){
+     printf("%s\n",texto);
+}
+void limpar(){
+    system("cls || clear");
+}
+void printvt(int *vet,int tamanho){
+     for(int i = 0; i < tamanho;i++){
+        printf("| %i | ",vet[i]);
+    }
+}
+
