@@ -73,21 +73,25 @@
 
 //Trocar cor
 void color(char color[8]) {
-  printf(color);
+    printf(color);
 }
+
 void espera() {
-  color(HRED);
-  printf("Precione ENTER para continuar...", getchar());
-  getchar();
+    color(HRED);
+    printf("Precione ENTER para continuar...", getchar());
+    getchar();
 }
+
 void println(char * texto) {
-  printf("%s\n", texto);
+    printf("%s\n", texto);
 }
+
 void limpar() {
-  system("cls || clear");
+    system("cls || clear");
 }
+
 void printvt(int * vet, int tamanho) {
-  for (int i = 0; i < tamanho; i++) {
-    printf("| %i | ", vet[i]);
-  }
+    for (int i = 0; i < tamanho; i++) {
+        printf("| %i | ", vet[i]);
+    }
 }
