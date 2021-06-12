@@ -1,13 +1,2 @@
-```c
-void calcularFatorial() {
-    int numero,resultado;
-    resultado = numero = 0;
-    printf("Digite um numero: \n");
-    printf("--> ");
-    scanf("%d",&numero);
-    for(resultado = 1; numero > 1; numero-=1)
-        resultado *= numero;
-    color(BHYEL);
-    printf("Resultado: %i \n",resultado);
-}
-```
+# TRABALHO
+[![](https://raw.githubusercontent.com/gabrielfreitassouza/Trabalho/master/wp3295258-_1_-_2_.webp?token=AUHK6KNPR7H3IVC4QKRSQ43AZZDKC)](https://wallpapercave.com/wp/wp3295258.png)
