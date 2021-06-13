@@ -34,7 +34,7 @@ int main() {
     setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
     int resultado,numero;
     resultado = numero = 0; // Iniciando as variaveis com valor 0
-    system("clear");
+    system("clear || cls");
     printf("Digite um número: \n");
     scanf("%d",&numero);
   for(resultado = 1; numero > 1; numero-=1)
@@ -68,7 +68,7 @@ int main() {
     setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
     int par[11],impar[11],numero,contador[2];
     contador[0] = contador[1] = numero = 0; // Iniciando as variaveis com valor 0
-    system("clear");
+    system("clear || cls");
     for (int i = 0;i <10;i++){ // Solicitando os 10 números ao usuário
         printf("Digite um número(%i): \n",i+1);
         scanf("%d",&numero);
@@ -80,7 +80,7 @@ int main() {
             contador[1] += 1;
         }
     }
-    system("clear");
+    system("clear || cls");
     if(contador[0] > 1 && contador[1] > 1 ){ // Verificar a quantidade de cada contador para mostrar a quantidade de números par e impar achado
         printf("\nSão %i números pares e %i números impar.\nPAR: ",contador[0],contador[1]);
     }else if(contador[0] > 1 && contador[1] == 1){
