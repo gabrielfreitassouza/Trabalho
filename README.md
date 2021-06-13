@@ -105,4 +105,4 @@ int main() {
 
 [EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO2 "EXECUTAR CÓDIGO")
 
-## Gabriel Freitas Souza  |  Guilherme Cândido Roffes
+# Gabriel Freitas Souza  |  Guilherme Cândido Roffes
