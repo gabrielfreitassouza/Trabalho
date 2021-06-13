@@ -1,4 +1,5 @@
-# TRABALHO
+# TRABALHO  
+
 [![](https://raw.githubusercontent.com/gabrielfreitassouza/Trabalho/master/IMAGENS/wp3295258-_1_-_2_.webp)](https://wallpapercave.com/wp/wp3295258.png)
 
 ## LISTAS DE EXERCÍCIOS 
@@ -103,3 +104,5 @@ int main() {
 [![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/02EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/02EX.png?raw=true)
 
 [EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO2 "EXECUTAR CÓDIGO")
+
+## Gabriel Freitas Souza  |  Guilherme Cândido Roffes
