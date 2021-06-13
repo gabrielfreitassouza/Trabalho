@@ -19,7 +19,7 @@
 
 2. Depois disso o programa dever realizar o cálculo fatorial para a achar o resultado.
 
-3. O resultado é obtido a partir da multiplicação de todos os seus antecessores.
+3. O resultado é obtido a partir da multiplicação de todos os seus antecessores  até o número um.
 
 4. Retornar o resultado para o usuário.
 
