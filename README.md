@@ -4,7 +4,7 @@
 ## LISTAS DE EXERCÍCIOS 
 [1. Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário.](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-01 "1. Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário.")
 
-2. Faça um programa que receba 10 números inteiros e mostre a quantidade de números pares e a quantidade de números impares.
+[2. Faça um programa que receba 10 números inteiros e mostre a quantidade de números pares e a quantidade de números impares.](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-01 "2. Faça um programa que receba 10 números inteiros e mostre a quantidade de números pares e a quantidade de números impares.")
 
 3.  Faça um algoritmo que leia um conjunto de números inteiros positivos e imprima o maior dentre eles. Admita que o usuário deve informar o valor -1 para finalizar o conjunto de números. (Ex.: 5, 102, 3, -1 Maior = 102).
 
@@ -43,7 +43,32 @@ int main() {
  return EXIT_SUCCESS;
 }
 ```
-###### SAÍDA
+###### EXEMPLO DE SAÍDA
 [![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/01EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/01EX.png?raw=true)
 
 [EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO1 "EXECUTAR CÓDIGO")
+
+#### EXERCÍCIO 02
+###### LÓGICA
+1. Primeiramente o programa dever pedir os números para o usuário.
+
+2. Depois disso o programa dever verificar se o número e par ou impar.
+
+3. Essa informação é obtida através do resto por 2 se o resultado for 0 então o número é par caso contrário é impar.
+
+4. Retornar a resposta para o usuário.
+
+###### CÓDIGO
+```c
+1. Primeiramente o programa dever pedir os números para o usuário.
+
+2. Depois disso o programa dever verificar se o número e par ou impar.
+
+3. Essa informação é obtida através do resto por 2 se o resultado for 0 então o número é par caso contrário é impar.
+
+4. Retornar a resposta para o usuário.
+```
+###### EXEMPLO DE SAÍDA
+[![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/02EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/02EX.png?raw=true)
+
+[EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO2 "EXECUTAR CÓDIGO")
