@@ -1,10 +1,6 @@
 # TRABALHO
 [![](https://raw.githubusercontent.com/gabrielfreitassouza/Trabalho/master/IMAGENS/wp3295258-_1_-_2_.webp)](https://wallpapercave.com/wp/wp3295258.png)
 
-####  MENU 
-[![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/MENU.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/MENU.png?raw=true)
-
-[EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/Trabalho "EXECUTAR CÓDIGO")
 ## LISTAS DE EXERCÍCIOS 
 [1. Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário.](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-01 "1. Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário.")
 
@@ -18,21 +14,36 @@
 
 ## RESOLUÇÃO DOS EXERCÍCIOS 
 #### EXERCÍCIO 01
-###### CODIGO
+###### LÓGICA
+1. Primeiramente o programa dever pedir o número para o usuário.
+
+2. Depois disso o programa dever realizar o cálculo fatorial para a achar o resultado.
+
+3. O resultado é obtido a partir da multiplicação de todos os seus antecessores.
+
+4. Retornar o resultado para o usuário.
+
+###### CÓDIGO
 ```c
-void calcularFatorial() {
-    int numero, resultado; 
-    resultado = numero = 0;  // Iniciar as variaveis com valor  = 0
-    color(BHBLU); // Trocar a cor da letra do terminal para azul
-    println("Digite um numero: "); 
-    color(BHGRN); // Trocar a cor da letra do terminal para verde
-    printf("--> ");
-    scanf("%d", & numero);
-    for (resultado = 1; numero > 1; numero -= 1)
-        resultado *= numero; // Realizar o Calcular Fatorial  
-    color(BHYEL);  // Trocar a cor da letra do terminal para amarelo
-    printf("Resultado: %i \n", resultado);
+// Importação das bibliotecas necessárias
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h> // Biblioteca para definir o local
+
+int main() {
+    setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
+    int resultado,numero;
+    resultado = numero = 0; // Iniciando as variaveis com valor 0
+    system("clear");
+    printf("Digite um número: \n");
+    scanf("%d",&numero);
+  for(resultado = 1; numero > 1; numero-=1)
+        resultado *= numero; // Executando o cálculo fatorial para encontra o resultado
+    printf("Resultado: %i \n",resultado);
+ return EXIT_SUCCESS;
 }
 ```
-###### SAIDA
-[![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/01.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/01.png?raw=true)
+###### SAÍDA
+[![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/01EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/01EX.png?raw=true)
+
+[EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO1 "EXECUTAR CÓDIGO")
