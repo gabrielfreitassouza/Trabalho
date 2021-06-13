@@ -14,7 +14,7 @@
 
 ## RESOLUÇÃO DOS EXERCÍCIOS 
 #### EXERCÍCIO 01
-###### LÓGICA
+###### LÓGICA 01
 1. Primeiramente o programa dever pedir o número para o usuário.
 
 2. Depois disso o programa dever realizar o cálculo fatorial para a achar o resultado.
@@ -23,7 +23,7 @@
 
 4. Retornar o resultado para o usuário.
 
-###### CÓDIGO
+###### CÓDIGO 01
 ```c
 // Importação das bibliotecas necessárias
 #include <stdio.h>
@@ -43,13 +43,13 @@ int main() {
  return EXIT_SUCCESS;
 }
 ```
-###### EXEMPLO DE SAÍDA
+###### EXEMPLO DE SAÍDA 01
 [![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/01EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/01EX.png?raw=true)
 
 [EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO1 "EXECUTAR CÓDIGO")
 
 #### EXERCÍCIO 02
-###### LÓGICA
+###### LÓGICA 02
 1. Primeiramente o programa dever pedir os números para o usuário.
 
 2. Depois disso o programa dever verificar se o número e par ou impar.
@@ -58,7 +58,7 @@ int main() {
 
 4. Retornar a resposta para o usuário.
 
-###### CÓDIGO
+###### CÓDIGO 02
 ```c
 // Importação das bibliotecas necessárias
 #include <stdio.h>
@@ -99,7 +99,7 @@ int main() {
     return EXIT_SUCCESS;
 }
 ```
-###### EXEMPLO DE SAÍDA
+###### EXEMPLO DE SAÍDA 02
 [![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/02EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/02EX.png?raw=true)
 
 [EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO2 "EXECUTAR CÓDIGO")
