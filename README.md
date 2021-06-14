@@ -7,7 +7,7 @@
 
 [2. Faça um programa que receba 10 números inteiros e mostre a quantidade de números pares e a quantidade de números impares.](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-02 "2. Faça um programa que receba 10 números inteiros e mostre a quantidade de números pares e a quantidade de números impares.")
 
-3.  Faça um algoritmo que leia um conjunto de números inteiros positivos e imprima o maior dentre eles. Admita que o usuário deve informar o valor -1 para finalizar o conjunto de números. (Ex.: 5, 102, 3, -1 Maior = 102).
+[3.  Faça um algoritmo que leia um conjunto de números inteiros positivos e imprima o maior dentre eles. Admita que o usuário deve informar o valor -1 para finalizar o conjunto de números. (Ex.: 5, 102, 3, -1 Maior = 102).](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-02 "3.  Faça um algoritmo que leia um conjunto de números inteiros positivos e imprima o maior dentre eles. Admita que o usuário deve informar o valor -1 para finalizar o conjunto de números. (Ex.: 5, 102, 3, -1 Maior = 102).")
 
 4. Construa um algoritmo que receba 5 idades distintas e informe a idade do mais velho e a do mais novo.
 
@@ -106,13 +106,11 @@ int main() {
 [EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO2 "EXECUTAR CÓDIGO")
 #### EXERCÍCIO 03
 ###### LÓGICA
-1. Primeiramente o programa dever pedir os números para o usuário.
+1. Primeiramente o programa dever pedir o conjunto de números para o usuário.
 
-2. Depois disso o programa dever verificar se o número e par ou impar.
+2. Depois disso o programa dever realizar a verificação de qual é o maior número.
 
-3. Essa informação é obtida através do resto por 2 se o resultado for 0 então o número é par caso contrário é impar.
-
-4. Retornar a resposta para o usuário.
+3. Retornar o resultado para o usuário.
 
 ###### CÓDIGO
 ```c
