@@ -28,20 +28,22 @@
 ```c
 // Importação das bibliotecas necessárias
 #include <stdio.h>
+
 #include <stdlib.h>
+
 #include <locale.h> // Biblioteca para definir o local
 
 int main() {
-    setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
-    int resultado,numero;
-    resultado = numero = 0; // Iniciando as variaveis com valor 0
-    system("clear || cls");
-    printf("Digite um número: \n");
-    scanf("%d",&numero);
-    for(resultado = 1; numero > 1; numero-=1)
-          resultado *= numero; // Executando o cálculo fatorial para encontra o resultado
-    printf("Resultado: %i \n",resultado);
-    return EXIT_SUCCESS;
+  setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
+  int resultado, numero;
+  resultado = numero = 0; // Iniciando as variaveis com valor 0
+  system("clear");
+  printf("Digite um número: \n");
+  scanf("%d", & numero);
+  for (resultado = 1; numero > 1; numero -= 1)
+    resultado *= numero; // Executando o cálculo fatorial para encontra o resultado
+  printf("Resultado: %i \n", resultado);
+  return EXIT_SUCCESS;
 }
 ```
 ###### EXEMPLO DE SAÍDA
@@ -63,41 +65,44 @@ int main() {
 ```c
 // Importação das bibliotecas necessárias
 #include <stdio.h>
+
 #include <stdlib.h>
+
 #include <locale.h> // Biblioteca para definir o local
+
 int main() {
-    setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
-    int par[11],impar[11],numero,contador[2];
-    contador[0] = contador[1] = numero = 0; // Iniciando as variaveis com valor 0
-    system("clear || cls");
-    for (int i = 0;i <10;i++){ // Solicitando os 10 números ao usuário
-        printf("Digite um número(%i): \n",i+1);
-        scanf("%d",&numero);
-        if (numero%2 == 0){ // Verificar se numero é par e caso seja guardar no vetor par e adicionar 1 ao contador de números
-            par[contador[0]] = numero;
-            contador[0] += 1;
-        }else if(numero%2 != 0){ // Verificar se numero é impar e caso seja guardar no vetor impar e adicionar 1 ao contador de números
-            impar[contador[1]] = numero;
-            contador[1] += 1;
-        }
+  setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
+  int par[11], impar[11], numero, contador[2];
+  contador[0] = contador[1] = numero = 0; // Iniciando as variaveis com valor 0
+  system("clear || cls");
+  for (int i = 0; i < 10; i++) { // Solicitando os 10 números ao usuário
+    printf("Digite um número(%i): \n", i + 1);
+    scanf("%d", & numero);
+    if (numero % 2 == 0) { // Verificar se numero é par e caso seja guardar no vetor par e adicionar 1 ao contador de números
+      par[contador[0]] = numero;
+      contador[0] += 1;
+    } else if (numero % 2 != 0) { // Verificar se numero é impar e caso seja guardar no vetor impar e adicionar 1 ao contador de números
+      impar[contador[1]] = numero;
+      contador[1] += 1;
     }
-    system("clear || cls");
-    if(contador[0] > 1 && contador[1] > 1 ){ // Verificar a quantidade de cada contador para mostrar a quantidade de números par e impar achado
-        printf("\nSão %i números pares e %i números impar.\nPAR: ",contador[0],contador[1]);
-    }else if(contador[0] > 1 && contador[1] == 1){
-        printf("São %i números pares e %i número impar.\nPAR: ",contador[0],contador[1]);
-    }else if(contador[0] == 1 && contador[1] > 1){
-        printf("São %i número par e %i números impar.\nPAR: ",contador[0],contador[1]);
-    }
-    for(int i = 0; i < contador[0];i++){ // Mostrar os números contidos no vetor par.
-        printf("| %i | ",par[i]);
-    }
-    printf("\nIMPAR: ");
-    for(int i = 0; i < contador[1];i++){// Mostrar os números contidos no vetor impar.
-        printf("| %i | ",impar[i]);
-    }
-    printf("\n");
-    return EXIT_SUCCESS;
+  }
+  system("clear || cls");
+  if (contador[0] > 1 && contador[1] > 1) { // Verificar a quantidade de cada contador para mostrar a quantidade de números par e impar achado
+    printf("\nSão %i números pares e %i números impar.\nPAR: ", contador[0], contador[1]);
+  } else if (contador[0] > 1 && contador[1] == 1) {
+    printf("São %i números pares e %i número impar.\nPAR: ", contador[0], contador[1]);
+  } else if (contador[0] == 1 && contador[1] > 1) {
+    printf("São %i número par e %i números impar.\nPAR: ", contador[0], contador[1]);
+  }
+  for (int i = 0; i < contador[0]; i++) { // Mostrar os números contidos no vetor par.
+    printf("| %i | ", par[i]);
+  }
+  printf("\nIMPAR: ");
+  for (int i = 0; i < contador[1]; i++) { // Mostrar os números contidos no vetor impar.
+    printf("| %i | ", impar[i]);
+  }
+  printf("\n");
+  return EXIT_SUCCESS;
 }
 ```
 ###### EXEMPLO DE SAÍDA
@@ -116,45 +121,48 @@ int main() {
 ```c
 // Importação das bibliotecas necessárias
 #include <string.h>
+
 #include <stdio.h>
+
 #include <stdlib.h>
+
 #include <locale.h> // Biblioteca para definir o local
 
 int main() {
-    setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
-    int aux;
-    long a[512];
-    char str[512];
-    system("clear || cls");
-    printf("Digite um conjunto de números e user -1 para finalizar:\n");
-    scanf("%s", str);
-    char * temp = 0;
-    char ** result = 0;
-    unsigned int tamanho = 0;
-    temp = strtok(str, ",");
-    if (temp) {
-        result = malloc((tamanho + 1) * sizeof(char ** ));
-        result[tamanho++] = temp;
-    } // Aloca o número especificado de bytes 
-    while ((temp = strtok(0, ",")) != 0) {
-        result = realloc(result, (tamanho + 1) * sizeof(char ** ));
-        result[tamanho++] = temp;
-    } // Diminui o tamanho do bloco de memória especificado 
-    for (int i = 0; i < tamanho; i++) {
-        a[i] = atol(result[i]);
-    } // Converter o vetor para inteiro
-    if (tamanho > 0)
-        free(result); // Libera memória de volta para o sistema 
-    if (a[tamanho - 1] == -1) { // Verificar se o último número é -1
-        aux = a[0];
-        for (int i = 1; i < tamanho; i++) {
-            if (a[i] > aux) {
-                aux = a[i];
-            }
-        } // Procurar o maior número
-        printf("Maior = %i\n", aux);
-    }
-    return EXIT_SUCCESS;
+  setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
+  int aux;
+  long a[512];
+  char str[512];
+  system("clear || cls");
+  printf("Digite um conjunto de números e user -1 para finalizar:\n");
+  scanf("%s", str);
+  char * temp = 0;
+  char ** result = 0;
+  unsigned int tamanho = 0;
+  temp = strtok(str, ",");
+  if (temp) {
+    result = malloc((tamanho + 1) * sizeof(char ** ));
+    result[tamanho++] = temp;
+  } // Aloca o número especificado de bytes 
+  while ((temp = strtok(0, ",")) != 0) {
+    result = realloc(result, (tamanho + 1) * sizeof(char ** ));
+    result[tamanho++] = temp;
+  } // Diminui o tamanho do bloco de memória especificado 
+  for (int i = 0; i < tamanho; i++) {
+    a[i] = atol(result[i]);
+  } // Converter o vetor para inteiro
+  if (tamanho > 0)
+    free(result); // Libera memória de volta para o sistema 
+  if (a[tamanho - 1] == -1) { // Verificar se o último número é -1
+    aux = a[0];
+    for (int i = 1; i < tamanho; i++) {
+      if (a[i] > aux) {
+        aux = a[i];
+      }
+    } // Procurar o maior número
+    printf("Maior = %i\n", aux);
+  }
+  return EXIT_SUCCESS;
 }
 ```
 ###### EXEMPLO DE SAÍDA
