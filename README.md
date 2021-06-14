@@ -154,6 +154,7 @@ int main() {
         } // Procurar o maior número
         printf("Maior = %i\n", aux);
     }
+    return EXIT_SUCCESS;
 }
 ```
 ###### EXEMPLO DE SAÍDA
