@@ -7,7 +7,7 @@
 
 [2. Faça um programa que receba 10 números inteiros e mostre a quantidade de números pares e a quantidade de números impares.](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-02 "2. Faça um programa que receba 10 números inteiros e mostre a quantidade de números pares e a quantidade de números impares.")
 
-[3.  Faça um algoritmo que leia um conjunto de números inteiros positivos e imprima o maior dentre eles. Admita que o usuário deve informar o valor -1 para finalizar o conjunto de números. (Ex.: 5, 102, 3, -1 Maior = 102).](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-02 "3.  Faça um algoritmo que leia um conjunto de números inteiros positivos e imprima o maior dentre eles. Admita que o usuário deve informar o valor -1 para finalizar o conjunto de números. (Ex.: 5, 102, 3, -1 Maior = 102).")
+[3.  Faça um algoritmo que leia um conjunto de números inteiros positivos e imprima o maior dentre eles. Admita que o usuário deve informar o valor -1 para finalizar o conjunto de números. (Ex.: 5, 102, 3, -1 Maior = 102).](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-03 "3.  Faça um algoritmo que leia um conjunto de números inteiros positivos e imprima o maior dentre eles. Admita que o usuário deve informar o valor -1 para finalizar o conjunto de números. (Ex.: 5, 102, 3, -1 Maior = 102).")
 
 4. Construa um algoritmo que receba 5 idades distintas e informe a idade do mais velho e a do mais novo.
 
