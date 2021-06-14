@@ -38,10 +38,10 @@ int main() {
     system("clear || cls");
     printf("Digite um número: \n");
     scanf("%d",&numero);
-  for(resultado = 1; numero > 1; numero-=1)
-        resultado *= numero; // Executando o cálculo fatorial para encontra o resultado
+    for(resultado = 1; numero > 1; numero-=1)
+          resultado *= numero; // Executando o cálculo fatorial para encontra o resultado
     printf("Resultado: %i \n",resultado);
- return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
 ```
 ###### EXEMPLO DE SAÍDA
