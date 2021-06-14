@@ -104,5 +104,63 @@ int main() {
 [![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/02EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/02EX.png?raw=true)
 
 [EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO2 "EXECUTAR CÓDIGO")
+#### EXERCÍCIO 03
+###### LÓGICA
+1. Primeiramente o programa dever pedir os números para o usuário.
+
+2. Depois disso o programa dever verificar se o número e par ou impar.
+
+3. Essa informação é obtida através do resto por 2 se o resultado for 0 então o número é par caso contrário é impar.
+
+4. Retornar a resposta para o usuário.
+
+###### CÓDIGO
+```c
+// Importação das bibliotecas necessárias
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h> // Biblioteca para definir o local
+
+int main() {
+    setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
+    int aux;
+    long a[512];
+    char str[512];
+    system("clear || cls");
+    printf("Digite um conjunto de números e user -1 para finalizar:\n");
+    scanf("%s", str);
+    char * temp = 0;
+    char ** result = 0;
+    unsigned int tamanho = 0;
+    temp = strtok(str, ",");
+    if (temp) {
+        result = malloc((tamanho + 1) * sizeof(char ** ));
+        result[tamanho++] = temp;
+    } // Aloca o número especificado de bytes 
+    while ((temp = strtok(0, ",")) != 0) {
+        result = realloc(result, (tamanho + 1) * sizeof(char ** ));
+        result[tamanho++] = temp;
+    } // Diminui o tamanho do bloco de memória especificado 
+    for (int i = 0; i < tamanho; i++) {
+        a[i] = atol(result[i]);
+    } // Converter o vetor para inteiro
+    if (tamanho > 0)
+        free(result); // Libera memória de volta para o sistema 
+    if (a[tamanho - 1] == -1) { // Verificar se o último número é -1
+        aux = a[0];
+        for (int i = 1; i < tamanho; i++) {
+            if (a[i] > aux) {
+                aux = a[i];
+            }
+        } // Procurar o maior número
+        printf("Maior = %i\n", aux);
+    }
+}
+```
+###### EXEMPLO DE SAÍDA
+[![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/03EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/03EX.png?raw=true)
+
+[EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO3 "EXECUTAR CÓDIGO")
 
 # Gabriel Freitas Souza  |  Guilherme Cândido Roffes
