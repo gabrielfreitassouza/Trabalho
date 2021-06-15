@@ -11,7 +11,7 @@
 
 [4. Construa um algoritmo que receba 5 idades distintas e informe a idade do mais velho e a do mais novo.](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-04 "4. Construa um algoritmo que receba 5 idades distintas e informe a idade do mais velho e a do mais novo.")
 
-5. Leia a razão de uma PA (Progressão Aritmética) e o seu primeiro e último termos e informe a soma dos elementos dessa PA.
+[5. Leia a razão de uma PA (Progressão Aritmética) e o seu primeiro e último termos e informe a soma dos elementos dessa PA.](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-05 "5. Leia a razão de uma PA (Progressão Aritmética) e o seu primeiro e último termos e informe a soma dos elementos dessa PA.")
 
 ## RESOLUÇÃO DOS EXERCÍCIOS 
 #### EXERCÍCIO 01
@@ -37,7 +37,7 @@ int main() {
   setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
   int resultado, numero;
   resultado = numero = 0; // Iniciando as variaveis com valor 0
-  system("clear || cls");
+  system("clear");
   printf("Digite um número: \n");
   scanf("%d", & numero);
   for (resultado = 1; numero > 1; numero -= 1)
@@ -224,5 +224,45 @@ int main() {
 [![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/04EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/04EX.png?raw=true)
 
 [EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO4 "EXECUTAR CÓDIGO")
+
+#### EXERCÍCIO 05
+###### LÓGICA
+1. Primeiramente o programa dever pedir a razão, primeiro e ultimo numero para o usuário.
+
+2. Depois disso o programa dever realizar o cálculo da razão.
+
+3. Retornar o resposta para o usuário.
+
+###### CÓDIGO
+```c
+/// Importação das bibliotecas necessárias
+#include <stdio.h>
+
+#include <stdlib.h>
+
+#include <locale.h> // Biblioteca para definir o local
+
+int main() {
+  int razao, primeiroNumero, ultimoNumero;
+  razao = primeiroNumero = ultimoNumero = 0; // Iniciando as variaveis com valor 0
+  system("clear || cls");
+  printf("Digite a razao:\n");
+  scanf("%d", & razao);
+  printf("Digite o primeiro numero:\n");
+  scanf("%d", & primeiroNumero);
+  printf("Digite o ultimo numero:\n");
+  scanf("%d", & ultimoNumero);
+  while (primeiroNumero < ultimoNumero) {
+    printf("%i,", primeiroNumero);
+    primeiroNumero += razao;
+  } // Exercutar o calculo
+  printf("%i.\n", primeiroNumero);
+  return EXIT_SUCCESS;
+}
+```
+###### EXEMPLO DE SAÍDA
+[![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/05EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/05EX.png?raw=true)
+
+[EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO5 "EXECUTAR CÓDIGO")
 
 # Gabriel Freitas Souza  |  Guilherme Cândido Roffes
