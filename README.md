@@ -9,7 +9,7 @@
 
 [3.  Faça um algoritmo que leia um conjunto de números inteiros positivos e imprima o maior dentre eles. Admita que o usuário deve informar o valor -1 para finalizar o conjunto de números. (Ex.: 5, 102, 3, -1 Maior = 102).](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-03 "3.  Faça um algoritmo que leia um conjunto de números inteiros positivos e imprima o maior dentre eles. Admita que o usuário deve informar o valor -1 para finalizar o conjunto de números. (Ex.: 5, 102, 3, -1 Maior = 102).")
 
-4. Construa um algoritmo que receba 5 idades distintas e informe a idade do mais velho e a do mais novo.
+[4. Construa um algoritmo que receba 5 idades distintas e informe a idade do mais velho e a do mais novo.](https://github.com/gabrielfreitassouza/Trabalho/#exerc%C3%ADcio-04 "4. Construa um algoritmo que receba 5 idades distintas e informe a idade do mais velho e a do mais novo.")
 
 5. Leia a razão de uma PA (Progressão Aritmética) e o seu primeiro e último termos e informe a soma dos elementos dessa PA.
 
@@ -169,5 +169,60 @@ int main() {
 [![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/03EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/03EX.png?raw=true)
 
 [EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO3 "EXECUTAR CÓDIGO")
+
+#### EXERCÍCIO 04
+###### LÓGICA
+1. Primeiramente o programa dever pedir as 5 idades para o usuário.
+
+2. Depois disso o programa dever realizar a verificação de qual é a maior 
+idade e menor idade.
+
+3. Retornar o resposta para o usuário.
+
+###### CÓDIGO
+```c
+// Importação das bibliotecas necessárias
+#include <stdio.h>
+
+#include <stdlib.h>
+
+int main() {
+  int idade[5], menor, maior;
+  char ordem[5][10] = {
+    "primeira",
+    "segunda",
+    "terceira",
+    "quarta",
+    "quinta"
+  };
+  system("clear || cls");
+  for (int i = 0; i < 5; i++) {
+    printf("Digite a %s idade: ", ordem[i]);
+    scanf("%d", & idade[i]);
+  }
+  for (int i = 0; i < 5; i++) { // Verificar quem é o mais velho
+    for (int j = 0; j <= i; j++) {
+      if (idade[i] <= idade[j]) {
+        maior = idade[i];
+        idade[i] = idade[j];
+        idade[j] = maior;
+      }
+    }
+    for (int j = 0; j <= i; j++) { // Verificar quem é o mais novo
+      if (idade[i] >= idade[j]) {
+        menor = idade[i];
+        idade[i] = idade[j];
+        idade[j] = menor;
+      }
+    }
+  }
+  printf("\n%i anos tem o mais velho.\n%i anos tem o mais novo\n", maior, menor);
+  return 0;
+}
+```
+###### EXEMPLO DE SAÍDA
+[![](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/04EX.png?raw=true)](https://github.com/gabrielfreitassouza/Trabalho/blob/master/IMAGENS/04EX.png?raw=true)
+
+[EXECUTAR CÓDIGO](https://replit.com/@gabrielfreitass/TB02EXERCICIO4 "EXECUTAR CÓDIGO")
 
 # Gabriel Freitas Souza  |  Guilherme Cândido Roffes
