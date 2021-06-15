@@ -34,5 +34,5 @@ int main() {
     }
   }
   printf("\n%i anos tem o mais velho.\n%i anos tem o mais novo\n", maior, menor);
-   return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }
