@@ -217,7 +217,7 @@ int main() {
     }
   }
   printf("\n%i anos tem o mais velho.\n%i anos tem o mais novo\n", maior, menor);
-  return 0;
+  return EXIT_SUCCESS;
 }
 ```
 ###### EXEMPLO DE SAÍDA
