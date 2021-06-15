@@ -9,7 +9,7 @@ int main() {
   setlocale(LC_ALL, "pt_BR.UTF-8"); // Definindo o local
   int resultado, numero;
   resultado = numero = 0; // Iniciando as variaveis com valor 0
-  system("clear");
+  system("clear || cls");
   printf("Digite um número: \n");
   scanf("%d", & numero);
   for (resultado = 1; numero > 1; numero -= 1)
